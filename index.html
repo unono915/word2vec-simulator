@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>워드투벡터 시각화 탐험기</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom global styles if needed, but prefer Tailwind classes */
+    body {
+      font-family: 'Pretendard', sans-serif; /* A nice Korean-friendly font, assuming it's available or Tailwind's sans is good enough */
+    }
+    /* Ensure Recharts text is visible */
+    .recharts-text {
+      fill: #333; /* Default text color for chart labels if not overridden */
+    }
+    .recharts-tooltip-label {
+      color: #333 !important; /* Ensure tooltip label text color */
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.4.0",
+    "recharts": "https://esm.sh/recharts@^2.15.3"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-slate-100">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
